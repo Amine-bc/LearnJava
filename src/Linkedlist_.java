@@ -1,15 +1,8 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.Comparator;
+import java.util.LinkedList ;
+public class Linkedlist_ {
 
-public class Array_lists {
-
-    // This Data structure is not very efficient
-    // it is implemented as an array in the memory
-
-    private ArrayList<Integer> numbers = new ArrayList<>();
-
+    private LinkedList<Integer> numbers = new LinkedList<Integer>();
     private void initarraylist()
     {
         int i =0 ;
@@ -18,7 +11,8 @@ public class Array_lists {
             numbers.add((int)(Math.random()*10));
         }
     }
-    public void Array_lists_(){
+
+    public void Linked_lists_(){
         initarraylist();
         System.out.println(numbers.toString());
         this.getarraylist();
@@ -31,9 +25,6 @@ public class Array_lists {
         numbers.clear();
         System.out.println(numbers);
 
-
-
-
     }
 
     private void getarraylist(){
@@ -42,5 +33,7 @@ public class Array_lists {
             System.out.println(numbers.get(i));
         }
     }
+
+
 
 }
